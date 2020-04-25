@@ -44,8 +44,8 @@
 											</p>
 										</div>
 									</div>
-									<div class="col-md-2" style="position: absolute;right: 0px; top: 38%;" >
-										<button type="button" class="btn btn-outline-info" (click)="getUserDetail(user.login, i)">{{btnName}} </button>
+									<div class="col-md-2" style="position: absolute;right: 38px; top: 117px;" >
+										<button type="button" class="btn btn-outline-info" (click)="getUserDetail(user.login, i)">{{  (i === expandedIndex) ? 'Collapse' : 'Details' }} </button>
 									</div>
 								</div>
 								<div class="row no-gutters">

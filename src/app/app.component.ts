@@ -14,7 +14,6 @@ export class AppComponent implements OnInit {
   userDetails: any;
   public isCollapsed = false;
   public expandedIndex = -1  
-  btnName: string = "Details"
   config: any;
   sortType: string = 'asc';
   constructor(
@@ -35,8 +34,6 @@ export class AppComponent implements OnInit {
     this.ngxService.start();
     if (this.username !== '') {
       this.service.searchUser(this.username).subscribe((res: any )=> {
-        console.log(res)
-       
         this.userList = res.items;
         this.totalRecord = res.total_count;
       });
@@ -50,7 +47,6 @@ export class AppComponent implements OnInit {
   getUserDetail(userId, index) {
     this.ngxService.start();
     this.service.getUserDetailById(userId).subscribe((res: any )=> {
-      console.log(res)
       this.ngxService.stop();
       this.expandedIndex = index === this.expandedIndex ? -1 : index;
       this.userDetails =  res;
@@ -63,7 +59,6 @@ export class AppComponent implements OnInit {
   }
 
   changeSortBy(type) {
-    console.log(type);
     this.sortType = type;
   }
   
