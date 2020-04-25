@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/font/Lato/Lato-Black.ttf') format('ttf'),
+      url('./assets/font/Lato/Lato-BlackItalic.ttf') format('ttf');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'FontAwesome';
+    src: url('./../node_modules/font-awesome/fonts/fontawesome-webfont.eot'),
+    url('./../node_modules/font-awesome/fonts/fontawesome-webfont.ttf'),
+    url('./../node_modules/font-awesome/fonts/fontawesome-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'lato', 'arial', sans-serif;
+  }
